@@ -5,6 +5,10 @@
         <title>To do List</title>
     </head>
     <body>
-        <h1>Today is <%= kindOfDay %>!</h1>
+        <%if(kindOfDay==="Monday"){%>
+            <h1 style="color:rgb(37, 144, 245)"><%= kindOfDay %>ToDo List</h1>
+        <%}else{%>
+            <h1 style="color:rgb(253, 56, 56)"><%= kindOfDay %>ToDo List</h1>
+        <%}%>
     </body>
 </html>
